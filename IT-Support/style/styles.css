@@ -56,11 +56,11 @@ body {
 }
 
 .main {
-    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 .main .hero {
@@ -73,7 +73,7 @@ body {
 }
 
 .main .hero .content {
-    margin: 190px 70px 50px 70px;
+    margin: 190px 20px 50px 20px;
     color: #FFFFFF;
 }
 
@@ -440,16 +440,20 @@ body {
 .main .footer {
     background: url(../images/polygon.jpg);
     color: white;
-    padding: 20px;
+    margin: 0;
+    padding: 10px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .main .foot {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
     gap: 0px;
-    margin: 20px;
+    margin: 20px 0px 20px 0px;
+    padding: 0;
+    align-items: center;
 }
 
 .footer .foot p {
@@ -464,10 +468,28 @@ body {
     align-items: flex-start;
 }
 
+.footer a {
+    text-decoration: none;
+    color: #ffffff;
+    margin: 5px 0;
+    display: block;
+    transition: color 0.3s;
+    font-size: 0.7em;
+}
+
+.footer a:hover {
+    color: #fffb00;
+}
+
+
 .foot .foot-4 .social {
     font-weight: bold;
 }
 
 .foot .foot-4 .social:hover {
     color: #fffb00;
+}
+
+.footer .bottom p {
+    font-size: 0.6em;
 }
