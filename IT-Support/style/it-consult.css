@@ -1,0 +1,339 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    margin: 2px;
+    padding: 2px;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    /* Optional for visibility */
+    z-index: 1000;
+}
+
+.nav .logo {
+    margin: 2px;
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    cursor: pointer;
+}
+
+.nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    /* Align elements to the right */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+
+.nav ul li {
+    margin: 0;
+}
+
+.nav ul li a {
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav ul li a:hover {
+    color: #333;
+    background-color: #fffb00;
+    /* Optional hover effect */
+}
+
+/* Burger menu */
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+    justify-self: flex-end;
+    /* Align burger menu to the right */
+}
+
+.burger-menu span {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .burger-menu {
+        display: flex;
+        position: relative;
+    }
+
+    .nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        align-items: center;
+        top: 60px;
+        right: 10px;
+        border-radius: 5px;
+        padding: 10px;
+        width: 200px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav ul.show {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: linear-gradient(135deg, #0056b3 0%, #004a99 15%, #004690 30%, #0067d6 50%, #1a89ff 70%, #004690 85%, #003d80 100%);
+        width: 100%;
+    }
+
+    .nav ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .nav ul li a {
+        padding: 10px;
+    }
+}
+
+
+body {
+    font-family: Poppins, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling for IT Consulting Section */
+.it-consult {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+.it-consult .content {
+    width: 50%;
+}
+
+.it-consult .content h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.it-consult .content p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.it-consult .content ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.it-consult .content ul li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.it-consult .content .button {
+    background-color: #0066cc;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.it-consult .content .button:hover {
+    background-color: #00509e;
+}
+
+.it-consult .photo {
+    width: 45%;
+    text-align: center;
+}
+
+.it-consult .photo img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.main .footer {
+    background: url(../images/polygon.jpg);
+    color: white;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.main .foot {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0px;
+    margin: 20px 0px 40px 0px;
+    padding: 10px;
+    align-items: center;
+}
+
+.footer .foot p {
+    font-size: 0.7em;
+    cursor: pointer;
+}
+
+.foot .foot-1, .foot .foot-2, .foot .foot-3, .foot .foot-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #ffffff;
+    margin: 5px 0;
+    display: block;
+    transition: color 0.3s;
+    font-size: 0.7em;
+}
+
+.foot-4 a {
+    text-decoration: none;
+    color: #ffffff;
+    /* Adjust to match your theme */
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    transition: color 0.3s ease-in-out;
+}
+
+.foot-4 a box-icon {
+    margin-right: 8px;
+    width: 24px;
+    height: 24px;
+    color: #ffffff;
+}
+
+.foot-4 a:hover {
+    color: #00bcd4;
+    /* Highlight color on hover */
+}
+
+.footer a:hover {
+    color: #fffb00;
+}
+
+
+.foot .foot-4 .social {
+    font-weight: bold;
+}
+
+.foot .foot-4 .social:hover {
+    color: #fffb00;
+}
+
+
+
+.footer .bottom p {
+    font-size: 0.6em;
+}
+
+
+/* Styling for IT Consulting Section */
+.it-consult {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+.it-consult .content {
+    width: 50%;
+}
+
+.it-consult .content h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.it-consult .content p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.it-consult .content ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.it-consult .content ul li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.it-consult .content .button {
+    background-color: #0066cc;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.it-consult .content .button:hover {
+    background-color: #00509e;
+}
+
+.it-consult .photo {
+    width: 45%;
+    text-align: center;
+}
+
+.it-consult .photo img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
