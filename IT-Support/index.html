@@ -6,6 +6,9 @@
         <title>IT Hub</title>
         <link rel="stylesheet" href="style/styles.css">
         <link rel="favicon" href="images/Logo.png">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'
+            rel='stylesheet'>
+        <link rel="script" href="js/main.js">
         <div class="nav">
             <div class="logo">
                 <a href="index.html">
@@ -14,13 +17,20 @@
                 </a>
             </div>
 
-            <ul>
+            <div class="burger-menu" id="burger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="nav-links" id="nav-links">
                 <li><a href="index.html#About">About</a></li>
                 <li><a href="index.html#Services">Services</a></li>
-                <li><a href="index.html#Why">Why Choose Us ?</a></li>
+                <li><a href="index.html#Why">Why Choose Us?</a></li>
                 <li><a href="index.html#Contact">Contact</a></li>
             </ul>
         </div>
+
     </head>
     <body>
         <div class="main">
@@ -226,9 +236,21 @@
 
                     <div class="foot-4">
                         <h4>Follow us on:</h4>
-                        <a class="social" href="#">Facebook</a>
-                        <a class="social" href="#">Twitter</a>
-                        <a class="social" href="#">LinkedIn</a>
+                        <a class="social" href="#" target="_blank">
+                            <box-icon type="logo"
+                                name="facebook-circle"
+                                color="#FFFFFF"></box-icon> Facebook
+                        </a>
+                        <a class="social" href="#" target="_blank">
+                            <box-icon type="logo" name="twitter"
+                                color="#FFFFFF"></box-icon>
+                            Twitter
+                        </a>
+                        <a class="social" href="#" target="_blank">
+                            <box-icon type="logo"
+                                name="linkedin-square"
+                                color="#FFFFFF"></box-icon> LinkedIn
+                        </a>
                     </div>
 
                 </div>
@@ -237,6 +259,8 @@
                 </div>
             </div>
         </div>
-
+        <script
+            src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>
