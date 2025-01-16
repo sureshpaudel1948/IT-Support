@@ -85,6 +85,7 @@
         display: none;
         flex-direction: column;
         position: absolute;
+        align-items: center;
         top: 60px;
         right: 10px;
         border-radius: 5px;
@@ -95,6 +96,10 @@
 
     .nav ul.show {
         display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: linear-gradient(135deg, #0056b3 0%, #004a99 15%, #004690 30%, #0067d6 50%, #1a89ff 70%, #004690 85%, #003d80 100%);
+        width: 100%;
     }
 
     .nav ul li {
@@ -576,4 +581,54 @@ body {
 
 .footer .bottom p {
     font-size: 0.6em;
+}
+
+/* Cloud Solutions Page */
+
+.cloud {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+    background: url(../images/idea.jpg);
+    /* background: linear-gradient(75deg, #3c9aff 0%, #004a99 15%, #004690 30%, #0067d6 50%, #1a89ff 70%, #004690 85%, #003d80 100%); */
+}
+
+.cloud .content {
+    max-width: 50%;
+    margin: 40px 0px 40px 0px;
+}
+
+.cloud .content h2 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.cloud .content p {
+    font-size: 0.8rem;
+    color: #f0f8ff;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.cloud .content .button {
+    background-color: #004a99;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cloud .content .button:hover {
+    background-color: #002e5c;
+}
+
+.cloud .photo img {
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
