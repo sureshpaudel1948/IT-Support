@@ -13,7 +13,6 @@
     align-items: center;
     position: fixed;
     width: 100%;
-    /* Optional for visibility */
     z-index: 1000;
 }
 
@@ -128,56 +127,76 @@ body {
     padding: 0;
 }
 
-/* Cloud Solutions Page */
-
-.main .cloud {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/* Styling for IT Consulting Section */
+.main .it-consult {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: flex-start;
+    background: url(../images/it-office.jpg);
     margin: 0;
-    padding: 20px;
-    background: url(../images/idea.jpg);
+    width: 100%;
 }
 
-.main .cloud .content {
-    max-width: 50%;
-    margin: 40px 0px 40px 0px;
+.main .it-consult .content {
+    margin: 0px;
+    width: 80%;
+    margin: 90px 40px 50px 40px;
 }
 
-.main .cloud .content h2 {
+.main .it-consult .photo {
+    margin: 190px 40px 50px 40px;
+}
+
+.main .it-consult .content h2 {
     font-size: 2.5rem;
     color: #ffffff;
     margin-bottom: 15px;
 }
 
-.main .cloud .content p {
+.main .it-consult .content p {
     font-size: 0.8rem;
-    color: #f0f8ff;
-    margin-bottom: 20px;
+    color: #ffffff;
     line-height: 1.6;
+    margin-bottom: 15px;
     text-align: justify;
 }
 
-.main .cloud .content .button {
-    background-color: #004a99;
+.main .it-consult .content ul {
+    list-style-type: disc;
+    margin-left: 20px;
     color: #ffffff;
-    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+
+.main .it-consult .content ul li {
+    margin-bottom: 10px;
+    font-size: 0.8rem;
+}
+
+.main .it-consult .content .button {
+    background-color: #0066cc;
+    color: #fff;
     border: none;
-    border-radius: 5px;
+    padding: 10px 20px;
     font-size: 1rem;
     cursor: pointer;
+    border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
-.main .cloud .content .button:hover {
-    background-color: #002e5c;
+.main .it-consult .content .button:hover {
+    background-color: #00509e;
 }
 
-.main .cloud .photo img {
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+.main .it-consult .photo {
+    width: 45%;
+    text-align: center;
 }
 
+.main .it-consult .photo img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
 .main .footer {
     background: url(../images/polygon.jpg);

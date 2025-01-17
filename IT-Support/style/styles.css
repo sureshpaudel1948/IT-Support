@@ -13,7 +13,6 @@
     align-items: center;
     position: fixed;
     width: 100%;
-    /* Optional for visibility */
     z-index: 1000;
 }
 
