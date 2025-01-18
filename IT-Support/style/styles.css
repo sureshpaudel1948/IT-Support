@@ -139,6 +139,7 @@ body {
 .main .hero .content {
     margin: 190px 30px 50px 30px;
     color: #FFFFFF;
+    text-align: justify;
 }
 
 .main .hero .photo {
